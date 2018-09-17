@@ -1,0 +1,21 @@
+{
+  "name": "THM Spellcheck",
+  "version": "1.0",
+  "description": "A shim to enable the built-in browser spellcheck on Top Hat's Pages Editor",
+  "permissions": [
+    "*://app.tophat.com/e/*", "activeTab", "webNavigation"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tophat.com/e/*"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
