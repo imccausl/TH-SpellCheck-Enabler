@@ -7,10 +7,10 @@ const config = {
 
 function mutationHandler(mutationsList) {
   const editableParentElement = document.querySelectorAll('.public-DraftEditor-content');
-  
+
   if (editableParentElement.length > 0) {
     editableParentElement.forEach(elm => {
-      if (!elm.spellchek) {
+      if (!elm.spellcheck) {
         elm.spellcheck = true;
       }
     });
