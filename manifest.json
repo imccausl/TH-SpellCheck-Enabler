@@ -5,13 +5,9 @@
   "permissions": [
     "*://app.tophat.com/e/*", "activeTab", "webNavigation"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "content_scripts": [
     {
-      "matches": ["*://*.tophat.com/e/*"],
+      "matches": ["*://app.tophat.com/e/*"],
       "run_at": "document_idle",
       "all_frames": true,
       "js": ["contentScript.js"]
