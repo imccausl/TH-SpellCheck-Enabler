@@ -12,6 +12,7 @@ function mutationHandler(mutationsList) {
     editableParentElement.forEach(elm => {
       if (!elm.spellcheck) {
         elm.spellcheck = true;
+        elm.focus();
       }
     });
   }
