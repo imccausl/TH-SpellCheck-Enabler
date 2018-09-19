@@ -6,4 +6,4 @@ It uses the MutationObserver API to listen for when the pages editor is open, an
 
 I was curious about whether I could perform some basic DOM manipulation of this kind based on DOM mutation, rather than page load events. Turns out I could... and it turns out there's a such thing as a MutationObserver API. Who knew?
 
-DISCLAIMER: This comes with absolutely no warranty express or otherwise. It is highly experimental and could, very well, delete your precious data. If you do decide to install this (and you'd have to know how to install chrome extensions in developer mode first) for the purpose of actually enabling spellcheck in this context, you do so entirely at your own risk.
+DISCLAIMER: This comes with absolutely no warranty express or otherwise. It is highly experimental and could, very well, delete your precious data. I mean it probably won't because all it does is change one little thing to "true" from "false", but nevertheless you use it entirely at your own risk.
